@@ -19,7 +19,7 @@ document.getElementById("btnBai1_1").onclick = function () {
   var c = document.getElementById("txtNumber3").value * 1;
   //Xử lý
   a--;
-  var ketQua = "Ngày tiếp theo là: " + a + "/" + b + "/" + c;
+  var ketQua = "Ngày trước đó là: " + a + "/" + b + "/" + c;
   //Đầu ra
   document.getElementById("footerBai1").innerHTML = ketQua;
 };
