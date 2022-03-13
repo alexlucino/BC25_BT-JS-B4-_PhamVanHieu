@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>BT JS B4+</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="btvn-content container my-5 p-5">
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs menu float-none justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" data-toggle="tab" href="#bai1">Bài 1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#bai2">Bài 2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#bai3">Bài 3</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#bai4">Bài 4</a>
+        </li>
+      </ul>
+
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div class="tab-pane container active" id="bai1">
+          <div class="py-3">
+            <div class="card">
+              <div class="card-header">Tìm ngày tháng năm</div>
+              <div class="card-body">
+                <div class="form-group">
+                  <label>Nhập Ngày</label>
+                  <input type="text" id="txtNumber1" class="form-control" />
+                </div>
+                <div class="form-group">
+                  <label>Nhập Tháng</label>
+                  <input type="text" id="txtNumber2" class="form-control" />
+                </div>
+                <div class="form-group">
+                  <label>Nhập Năm</label>
+                  <input type="text" id="txtNumber3" class="form-control" />
+                </div>
+                <button id="btnBai1_1" class="btn btn-success">
+                  Ngày hôm trước
+                </button>
+                <button id="btnBai1_2" class="btn btn-success">
+                  Ngày hôm sau
+                </button>
+              </div>
+              <div id="footerBai1" class="card-footer text-muted"></div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane container fade" id="bai2">
+          <div class="card">
+            <div class="card-header">Cho biết tháng có bao nhiêu ngày</div>
+            <div class="card-body">
+              <div class="form-group">
+                <label>Nhập Tháng</label>
+                <input type="text" id="txtNumber2_1" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label>Nhập Năm</label>
+                <input type="text" id="txtNumber2_2" class="form-control" />
+              </div>
+              <button id="btnBai2" class="btn btn-success">Tính</button>
+            </div>
+            <div id="footerBai2" class="card-footer text-muted"></div>
+          </div>
+        </div>
+        <div class="tab-pane container fade" id="bai3">
+          <div class="card">
+            <div class="card-header">Đọc số</div>
+            <div class="card-body">
+              <div class="form-group">
+                <label>Nhập 3 chữ số</label>
+                <input type="text" id="txtNumber3_1" class="form-control" />
+              </div>
+              <button id="btnBai3" class="btn btn-success">Đọc</button>
+            </div>
+            <div id="footerBai3" class="card-footer text-muted"></div>
+          </div>
+        </div>
+        <div class="tab-pane container fade" id="bai4">
+          <div class="card">
+            <div class="card-header">Tìm sinh viên xa trường nhất</div>
+            <div class="card-body text-center">
+              <div class="form-group">
+                <label>Sinh Viên 1
+                <input type="text" id="txtName4_1" class="form-control" placeholder="Tên sinh viên"/>
+                <input type="text" id="txtNumber1_x" class="form-control" placeholder="Tọa độ X"/>
+                <input type="text" id="txtNumber1_y" class="form-control" placeholder="Tọa độ Y"/>
+              </div>
+            </label>
+              <div class="form-group">
+                <label>Sinh Viên 2
+                <input type="text" id="txtName4_2" class="form-control" placeholder="Tên sinh viên"/>
+                <input type="text" id="txtNumber2_x" class="form-control" placeholder="Tọa độ X"/>
+                <input type="text" id="txtNumber2_y" class="form-control" placeholder="Tọa độ Y"/>
+              </div>
+            </label>
+              <div class="form-group">
+                <label>Sinh Viên 3
+                <input type="text" id="txtName4_3" class="form-control" placeholder="Tên sinh viên"/>
+                <input type="text" id="txtNumber3_x" class="form-control" placeholder="Tọa độ X"/>
+                <input type="text" id="txtNumber3_y" class="form-control" placeholder="Tọa độ Y"/>
+              </div>
+            </label>
+              <button id="btnBai4" class="btn btn-success">Tìm</button>
+            </div>
+            <div id="footerBai4" class="card-footer text-muted"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
